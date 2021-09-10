@@ -1,3 +1,4 @@
+from random import randint
 x=1
 sala=1
 while(sala<=8 and x<=7):
@@ -9,6 +10,6 @@ while(sala<=8 and x<=7):
     elif (sala==8 and caminho==2):
         sala=1
         print("Você entrou em um portal misterioso que te levou para o inicio da dungeon\n")
-        sala=(sala+caminho)//x
+        sala = randint(1,5)
     sala=sala+caminho
     x=x+1
